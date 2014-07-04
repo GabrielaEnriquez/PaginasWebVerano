@@ -1,0 +1,53 @@
+<html>
+ <head>
+  <script src ="Js/jquery.min.js"></script>
+  <script>
+      $(document).ready(
+       function(){
+	   //alert('HOLA JavaScript');
+	   
+	      alert($('#elemento1').css('fontSize'));
+		  $('#elemento1').css('fontSize', '100px');
+		  alert($('#elemento1').css('fontSize'));
+          $('#elemento1').hide('slow');
+		  $('#elemento1').show('slow');
+          $('#elemento1').click(
+            function(){
+			    $(this).hide('slow');
+              }	
+                               );
+		  $('h1').css({ 'fontSize' : '100px', 'color' : 'red' });
+          alert($('h1').width()); // obtiene el ancho del primer elemento H1
+		  alert($('h2').height());
+		  $('h2').css({ 'fontSize': '100px', 'color' : 'pink' });
+		  $('h2').height('80px');
+		  $('#boton').click(
+		  function()
+		  {
+		  alert($('·input1').val());
+		  }
+		  );
+		  
+		  
+}
+		 
+	   }
+	   );
+   </script>
+ </head>
+
+     <input type="text" id="input1">
+	 <button id="boton"> Aceptar</button>
+	 <body>
+	  <div id="container" class="elemento2">
+	   <h1 id "titulo">
+		<p class="parrafo" id="elemento1"> Texto </p>
+	   </h1>
+	  </div>
+		<div>
+		 <h1 class="titulo"> Texto </h1>
+		 <h2 class="titulo"> Texto </h2>
+		</div>
+	 </body>
+</html> 
+	 
